@@ -1,0 +1,155 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow .sidebar {
+    width: 5%;
+    max-width: 250px;
+  }
+
+  
+}
+
+/* Node Styling */
+.react-flow__node {
+  width: 150px;
+  box-sizing: border-box;
+  height:100px;
+  font-size: 12px;
+  background: #eee;
+  border: 1px solid #555;
+  border-radius: 5px;
+  text-align: center;
+}
+.react-flow__node label {
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  padding: 0 .2rem;
+  resize: none;
+}
+
+.react-flow__node textarea {
+  border: none;
+  border-radius: 0px 0px 5px 5px;
+  height: 100%;
+  padding: 0 .2rem;
+  resize: none;
+  align-self: self-start;
+}
+
+.react-flow__node-system {
+  background: #eee;
+}
+.react-flow__node-user {
+  background: #cce;
+}
+.react-flow__node-assistant {
+  background: #ecc;
+}
+
+.node {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 20px 1fr;
+}
+.chat-window {
+  width: 25%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #eee;
+}
+
+/* Message Styling */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.message-role {
+  font-weight: 300;
+}
+
+
+.message-send-button {
+  margin-top: auto;
+}
+
+/* Save Controller */
+.save__controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+  font-size: 12px;
+}
+
+.save__controls button {
+  margin-left: 5px;
+}
+
+.react-flow__resize-control.line {
+  border-style: none;
+}
+.react-flow__resize-control.handle {
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background: none;
+  border: none;
+  transform: translate(-50%, -50%);
+}
