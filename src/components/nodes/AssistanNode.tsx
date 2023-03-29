@@ -32,7 +32,7 @@ export default memo(({ id, data } :AssistanNodeProps)  => {
         style={{ background: '#555' }}
       />
       <div className='node' role="button" tabIndex={0} onClick={onClick}>
-        <label>Assistant Prompt</label>
+        <label>Assistant</label>
         <textarea id={id} name={data.label} onChange={onChange} defaultValue={data.content}>
         </textarea>
       </div>

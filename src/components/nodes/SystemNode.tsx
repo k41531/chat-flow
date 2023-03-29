@@ -27,7 +27,7 @@ export default memo(({ id, data } : SystemNodeProps)  => {
     <>
       <NodeResizer minWidth={100} minHeight={30} />
       <div className='node' role="button" tabIndex={0} onClick={onClick}>
-        <label>System Prompt</label>
+        <label>System</label>
         <textarea id={id} name={data.label} onChange={onChange} defaultValue={data.content}>
         </textarea>
       </div>

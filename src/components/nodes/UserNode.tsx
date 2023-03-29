@@ -32,7 +32,7 @@ export default memo(({ id, data } :UserNodeProps)  => {
         style={{ background: '#555' }}
       />
       <div className='node' role="button" tabIndex={0} onClick={onClick}>
-        <label>User Prompt</label>
+        <label>User</label>
         <textarea id={id} name={data.label} onChange={onChange} defaultValue={data.content}>
         </textarea>
       </div>
